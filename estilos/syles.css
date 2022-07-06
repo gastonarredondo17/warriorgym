@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(176deg, rgba(0,0,0,1) 40%, rgba(56,56,56,1) 100%);
+    font-family: 'Roboto';
+}
+h1{ font-size: 2.5rem;}
+h2{ font-size: 2rem;}
+h3{ font-size: 1.5rem;}
+h4{ font-size: 1.2rem;}
+p { font-size: 1.1rem;color:white}
+a {text-decoration: none;}
+
+
+/* --------------------------INDEX-------------------- */
+/* Header */
+.header {
+    background-color: black;
+    position: sticky;
+    z-index: 10000;
+    top: 0%;
+    height: 18rem;
+}
+
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Logo/titulo */
+.titulo {    
+    padding: 2.5rem 3rem;
+    font-weight: bold;
+    color: crimson;
+    font-size: 1.5rem;
+    
+}
+/* Menu */
+.header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2px;
+}
+.header a {
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.header a:hover {
+    color: crimson;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../multimedia/backgroundpesas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.hero h1{
+    color:white;
+}
+.spanTitulo {
+    color:crimson;
+    text-align: center;
+}
+.btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 3rem;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    border: 3px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: crimson;
+}
+
+button:hover{
+    background-color: rgb(156, 1, 32);
+}
+/* Descripcion */
+.descripcion{
+    background-color: white;
+    height: 14rem;
+    border-radius: 20px;
+    
+}
+.descripcion p {
+    color: black;
+    padding: 1rem;
+    margin-top: 0px;
+}
+.descripcion h2{
+    color: rgb(220, 20, 60);
+    padding: 0.5rem;
+}
+/* Disciplinas */
+.tituloDisciplinas {
+    color: crimson;
+    margin-top: 2rem;   
+}
+.disciplinas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+    border: 2px solid crimson;
+    border-radius: 30px;
+    height: 100%;
+    margin: 2.5rem;
+    padding: 2rem;
+    box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.5);
+ 
+}
+.texto h3{
+    text-align: center;    
+}
+/* Footer */
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.redes {text-align: center;}
+
+.redesIcono {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.ubicacion {
+    text-align: center;
+}
+.copy{
+    font-size: 0.8rem;
+    color: grey;
+}
+
+/*--------------------- HORARIOS.html -------------------*/
+.horarios h2 {
+    margin-top: 1rem;
+}
+.main img {
+    width: 400px;
+    height: 300px;
+}
+.descripcionHorario {
+    background-color: white;
+    height: 10rem;
+    border-radius: 20px;
+    padding: 1rem;
+    color: crimson;
+    text-align: center;
+}
+.staffTitulo{
+    display: flex;
+    justify-content: center;
+}
+.instructores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    border: 2px solid crimson;
+    border-radius: 30px;
+    height: 100%;
+    margin: 2.5rem;
+    padding: 2rem;
+    box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.5);
+ 
+}
+.instructores img {
+    width: 150px;
+    height: 200px;
+    padding-right: 10px;
+    border-radius: 30px;
+}
+/* ------------------MEMBRESIA.html--------------- */
+/* Main-membresia */
+.membresiaTitulo {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    color: crimson;
+    margin-top: 2rem;
+}
+/* Planes - membresia */
+.planes{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    height: 30%;
+    width:60%;
+    margin-top: 2rem;
+}
+.planes h4 {
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+    font-size: 1.5rem;
+
+}
+.planes h3 {
+    font-weight: 200;
+
+}
+
+.planLista ul li {
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2rem;
+    margin: 1rem;
+}
+.btnMembresia{   
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 3rem;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    border: 3px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: crimson;
+}
+
+
+/* Pagos-membresia */
+.pagos {
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+    margin-top: 2rem;
+}
+
+/* -----------------Galeria.html------------------- */
+.galeria img {
+    width: 30rem;
+    height: 15rem;
+    margin: 1rem;
+    border-radius: 5%;
+    transition: .3s ease-out;
+    
+    }
+.galeria img:hover{
+    transform: scale(1.05);
+    cursor: pointer;   
+}
+.musica{
+    display: none;
+
+}
+/* -------------------------CONTACTO.html-------------------- */
+.formulario {
+    width: 25rem;
+    background: rgb(24, 23, 23);
+    padding: 1.8rem;
+    margin: auto;
+    margin-top: 6rem;
+    border-radius: 30px;    
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.formulario h4{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 3rem;
+}
+.forms{
+    width: 100%;
+    background: #272829;
+    padding: 0.8rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #020305;
+    font-size: 1.1rem;
+    color: white;
+}
+.formulario .boton {
+    width: 100%;
+    background: #272829;
+    border: none;
+    padding: 0.8rem;
+    color: white;
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+.formulario .boton:hover{
+    background-color: grey;
+}
+.formulario .escribir {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+@media (min-width: 1024px) {
+
+
+    h1{ font-size: 2.5rem;}
+    h2{ font-size: 2rem;}
+    h3{ font-size: 1.5rem;}
+    h4{ font-size: 1.2rem;}
+    p { font-size: 1.1rem;color:white}
+    a {text-decoration: none;}
+    /* HEADER */
+    .header{
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+     }
+    .header .contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     }
+     .contenedor nav {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 1rem;      
+     }
+     /* HERO */
+     .hero h1 {
+        font-size: 2.5rem;
+     }
+     .descripcion{
+        background-color: white;
+        height: 10rem;
+        border-radius: 20px;
+    }
+     /* DISCIPLINAS */
+     .contenedor .disciplinas{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;        
+     }
+     .disciplinas {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        border: none;
+        border-radius: none;
+        margin: 2.5rem;
+        padding: 2rem;
+        box-shadow: none;     
+    }
+    /* TEXTO DISCIPLINAS */
+    .disciplinas .texto {
+        width: 50%;
+        max-width: 50rem;
+        text-align: initial;
+        padding-left: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.5rem;
+     }
+
+
+     /* IMG DISCIPLINAS */
+     .disciplinas .imgFuncional{
+        background-image: url("../multimedia/disciplinas-funcional.jpg");
+        background-size: cover;
+        border-radius: 30px;
+        background-position:left;
+        height: 200px;
+        width: 200px; 
+     }
+     .disciplinas .imgCrossfit{
+        background-image: url("../multimedia/disciplinas-crossfit.jpg");
+        background-size: cover;
+        border-radius: 30px;
+        background-position:left;
+        height: 200px;
+        width: 200px; 
+     }
+     .disciplinas .imgStretching{
+        background-image: url("../multimedia/disciplinas-stretching.jpg");
+        background-size: cover;
+        border-radius: 30px;
+        background-position:left;
+        height: 200px;
+        width: 200px; 
+     }
+     .disciplinas .imgCardio{
+        background-image: url("../multimedia/disciplinas-cardio.png");
+        background-size: cover;
+        border-radius: 30px;
+        background-position:left;
+        height: 200px;
+        width: 200px; 
+     }
+     .disciplinas .imgBox{
+        background-image: url("../multimedia/disciplinas-box.jpg");
+        background-size: cover;
+        border-radius: 30px;
+        background-position:left;
+        height: 200px;
+        width: 200px; 
+     }
+     .disciplinas .imgMusculacion{
+        background-image: url("../multimedia/disciplinas-musculacion.jpg");
+        background-size: cover;
+        border-radius: 30px;
+        background-position:left;
+        height: 200px;
+        width: 200px; 
+     }
+     /* HORARIOS.html */
+     .horarios h2 {
+        margin-top: 6rem;
+    }
+    /* MAIN-Horarios */
+    .main img {
+        width: 600px;
+        height: 500px;
+    }
+    .section h2{
+        display: flex;
+        justify-content: center;
+    }
+    /* DESCRIPCION-Horarios */
+    .descripcionHorario { 
+        display: flex;
+        height: 10rem;           
+        border-radius: 20px;
+        padding: 1rem;
+        color: crimson;
+        text-align: center;
+        line-height: 4rem;
+    }
+    /* Staff-Horarios */
+    .staff .contenedor {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .staffTitulo{
+        display: flex; 
+        justify-content: center;
+    }
+    /* Instructores-horario */
+    .instructores {
+        display: flex;
+        flex-direction: column;
+        width: 30%;        
+        border: 2px solid crimson;
+        border-radius: 30px;
+        height: 100%;
+        margin: 2.5rem;
+        padding: 2rem;
+        box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.5);
+     
+    }
+    .instructores img {
+        width: 150px;
+        height: 200px;
+        border-radius: 30px;
+        padding-right: 10px;
+    }
+    
+
+/* MEMBRESIA.html */
+    .membresia h2{
+        color:crimson;
+        margin-top: 6rem;
+    }
+
+    .membresia .contenedor{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;       
+        width: 40%;
+         
+    }
+    /* Planes- membresia */
+    .planes{
+        margin: 1rem;
+    }
+    /* Boton- Membresía */
+    .btnMembresia{   
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 3rem;
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+        border: 3px solid rgba(0,0,0,0.3);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        color: white;
+        background-color: crimson;
+    }
+
+    /* GALERIA.html */
+    .tituloGaleria {
+        color: crimson;
+        margin-top: 6rem;
+        text-align: center;
+    }
+
+    .galeria{
+        text-align: center;
+    }
+
+}
