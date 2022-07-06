@@ -9,6 +9,7 @@ body {
     background: rgb(0,0,0);
     background: linear-gradient(176deg, rgba(0,0,0,1) 40%, rgba(56,56,56,1) 100%);
     font-family: 'Roboto';
+    
 }
 h1{ font-size: 2.5rem;}
 h2{ font-size: 2rem;}
@@ -23,7 +24,7 @@ a {text-decoration: none;}
 .header {
     background-color: black;
     position: sticky;
-    z-index: 10000;
+    z-index: 40000;
     top: 0%;
     height: 18rem;
 }
@@ -41,11 +42,7 @@ a {text-decoration: none;}
     font-weight: bold;
     color: crimson;
     font-size: 1.5rem;
-  }
-
-
-
-    
+  }    
 
 /* Menu */
 .header nav {
@@ -107,7 +104,8 @@ button:hover{
 /* Descripcion */
 .descripcion{
     background-color: white;
-    height: 14rem;
+    width: auto;
+    height: 16rem;
     border-radius: 20px;
     
 }
@@ -269,17 +267,14 @@ button:hover{
 
 /* -----------------Galeria.html------------------- */
 .galeria img {
-    width: 30rem;
-    height: 15rem;
-    margin: 1rem;
+    width: 100%;
+    height: auto;
+    margin: 1rem 0rem;
     border-radius: 5%;
     transition: .3s ease-out;
     
     }
-.galeria img:hover{
-    transform: scale(1.05);
-    cursor: pointer;   
-}
+
 .musica{
     display: none;
 
@@ -337,6 +332,8 @@ button:hover{
     h4{ font-size: 1.2rem;}
     p { font-size: 1.1rem;color:white}
     a {text-decoration: none;}
+
+    /*-------------------- INDEX----------------------- */    
     /* HEADER */
     .header{
     position: fixed;
@@ -445,7 +442,7 @@ button:hover{
         height: 200px;
         width: 200px; 
      }
-     /* HORARIOS.html */
+     /* -------------------HORARIOS.html------------- */
      .horarios h2 {
         margin-top: 6rem;
     }
@@ -500,7 +497,7 @@ button:hover{
     }
     
 
-/* MEMBRESIA.html */
+/* -----------------MEMBRESIA.html ---------------*/
     .membresia h2{
         color:crimson;
         margin-top: 6rem;
@@ -539,6 +536,10 @@ button:hover{
 
     .galeria{
         text-align: center;
+    }
+    .galeria img:hover{
+        transform: scale(1.05);
+        cursor: pointer;   
     }
 
 }
