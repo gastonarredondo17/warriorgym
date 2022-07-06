@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warrior Gym</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -15,7 +18,7 @@
     <header class="header">
         <div class="contenedor">
             <div class="logo">
-                <h2 class="titulo">Warrior Gym</h2>
+                <h2 class="titulo animate__animated animate__backInLeft">Warrior Gym</h2>
             </div>
             <nav>
                 <a href="index.html">Inicio</a>
@@ -49,7 +52,7 @@
     <main class="main">
         <div class="contenedor">
             <h2 class="tituloDisciplinas">DISCIPLINAS</h2>
-            <div class="disciplinas">
+            <div class=disciplinas data-aos="fade-right">
                 <div class="imgFuncional"></div>
                 <div class="texto">
                     <h3 class="spanTitulo">Funcional</h3>
@@ -57,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="disciplinas">
+            <div class=disciplinas data-aos="fade-left">
                 <div class="imgCrossfit"></div>
                 <div class="texto">
                     <h3 class="spanTitulo">Crossfit</h3>
@@ -65,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="disciplinas">
+            <div class=disciplinas data-aos="fade-right">
                 <div class="imgStretching"></div>
                 <div class="texto">
                     <h3 class="spanTitulo">Stretching</h3>
@@ -73,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="disciplinas">
+            <div class=disciplinas data-aos="fade-left">
                 <div class="imgCardio"></div>
                 <div class="texto">
                     <h3 class="spanTitulo">Cardio</h3>
@@ -81,7 +84,7 @@
                 </div>
             </div>  
 
-            <div class="disciplinas">
+            <div class=disciplinas data-aos="fade-right">
                 <div class="imgBox"></div>
                 <div class="texto">
                     <h3 class="spanTitulo">Box</h3>
@@ -89,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="disciplinas">
+            <div class=disciplinas data-aos="fade-left">
                 <div class="imgMusculacion"></div>
                 <div class="texto">
                     <h3 class="spanTitulo">Musculación</h3>
@@ -118,7 +121,9 @@
         </div>
       </footer>
     
-
+      <script>
+        AOS.init();
+      </script>
     
 </body>
 </html>
