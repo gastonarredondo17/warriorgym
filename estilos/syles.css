@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background: rgb(0,0,0);
     background: linear-gradient(176deg, rgba(0,0,0,1) 40%, rgba(56,56,56,1) 100%);
@@ -290,10 +289,10 @@ button:hover{
     color: white;
     box-shadow: 7px 13px 37px #000;
 }
-.formulario h4{
+.formulario h2{
     display: flex;
     justify-content: center;
-    font-size: 22px;
+    font-size: 2rem;
     margin-bottom: 3rem;
 }
 .forms{
@@ -323,7 +322,18 @@ button:hover{
     justify-content: center;
     width: 100%;
 }
-@media (min-width: 1024px) {
+/* Ubicacion */
+.mapa {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 20px;
+}
+.mapa iframe{
+    border-radius: 20px;
+}
+
+@media (min-width: 768px) {
 
 
     h1{ font-size: 2.5rem;}
@@ -514,6 +524,9 @@ button:hover{
     .planes{
         margin: 1rem;
     }
+    .planes ul {
+        padding-left: 0px;
+    }
     /* Boton- Membresía */
     .btnMembresia{   
         font-size: 1.5rem;
@@ -527,19 +540,33 @@ button:hover{
         background-color: crimson;
     }
 
-    /* GALERIA.html */
-    .tituloGaleria {
+    /* ---------------GALERIA.html-------------------- */
+    .galeria h2 {
         color: crimson;
         margin-top: 6rem;
         text-align: center;
+        font-family: 'Roboto';
     }
-
     .galeria{
         text-align: center;
     }
+    .galeria img {
+        width: 25rem;
+        height: 15rem;
+        margin-top:6rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        border-radius: 5%;
+        transition: .3s ease-out;
+        
+        }
+    
     .galeria img:hover{
         transform: scale(1.05);
         cursor: pointer;   
     }
+
+    /*-------------------- CONTACTO.html--------------- */
+
 
 }
