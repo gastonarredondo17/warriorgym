@@ -15,21 +15,34 @@
     <link rel="stylesheet" href="estilos/syles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="contenedor">
-            <div class="logo">
-                <h2 class="titulo animate__animated animate__backInLeft">Warrior Gym</h2>
-            </div>
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="pages/horarios.html">Horarios</a>
-                <a href="pages/membresia.html">Membresía</a>
-                <a href="pages/galeria.html">Galería</a>
-                <a href="pages/contacto.html">Contacto</a>
-            </nav>
+    <!--------------- Menú ------------>  
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+          <a class="titulo" href="index.html">Warrior Gym</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-end" id="navbarNav">
+            <ul class="navbar-nav ">
+                <a class="enlaces" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="enlaces" href="pages/horarios.html">Horarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="enlaces" href="pages/membresia.html">Membresía</a>
+              </li>
+              <li class="nav-item">
+                <a class="enlaces" href="pages/galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="enlaces" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
+    </nav>
+    
     <!-- Hero -->
     <section class="hero">
             <div class="contenedor">
@@ -65,7 +78,7 @@
                 <div class="imgCrossfit"></div>
                 <div class="texto">
                     <h3 class="spanTitulo">Crossfit</h3>
-                    <p>Es un entrenamiento que se caracteriza por incluir movimientos de gimnasia olímpica (para mejorar la flexibilidad y el control de fuerza y peso corporal), levantamiento de pesas olímpicas (para desarrollar una alta potencia) y ejercicios cardiovasculares ,para mejorar la capacidad cardiaca y pulmonar.</p>
+                    <p>Es un entrenamiento que se caracteriza por incluir movimientos de gimnasia olímpica (para mejorar la flexibilidad y el control de fuerza y peso corporal), levantamiento de pesas olímpicas (para desarrollar una alta potencia) y ejercicios cardiovasculares (para mejorar la capacidad cardiaca y pulmonar).</p>
                 </div>
             </div>
 
@@ -97,16 +110,14 @@
                 <div class="imgMusculacion"></div>
                 <div class="texto">
                     <h3 class="spanTitulo">Musculación</h3>
-                    <p>La musculación es un entrenamiento que lleva su proceso de crecimiento y regeneración de las fibras musculares.Es una alternativa de actividad física basada generalmente en ejercicio físico de media a alta intensidad, con la finalidad encontrar un equilibrio muscular entre los segmentos corporales, generalmente se utilizan estímulos anaeróbicos.</p>
+                    <p>La musculación es un entrenamiento que lleva su proceso de crecimiento y regeneración de las fibras musculares.Es una alternativa de actividad física basada generalmente en ejercicio físico de media a alta intensidad, con la finalidad de encontrar un equilibrio muscular entre los segmentos corporales, generalmente se utilizan estímulos anaeróbicos.</p>
                 </div>
             </div>
 
         </div>
     </main>
-    <!-- Slider -->
-      <section class="slider"></section>
-    <!-- Footer -->
-      <footer class="footer container-fluid">
+      <!-- Footer -->
+    <footer class="footer container-fluid">
         <div class="redes row">
             <div><h3 class="spanTitulo col-12">Seguinos en nuestras redes</h3></div>
             <div class="redesSociales col-12">
@@ -122,11 +133,12 @@
                 <p class="copy">&copy; Warrior Gym 2022</p>
             </div>
         </div>
-      </footer>
+    </footer>
     
-      <script>AOS.init();</script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <script>AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     
 </body>
 </html>

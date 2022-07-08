@@ -20,12 +20,33 @@ a {text-decoration: none;}
 
 /* --------------------------INDEX-------------------- */
 /* Header */
-.header {
+.navbar {
     background-color: black;
-    position: sticky;
+    position: fixed;
     z-index: 40000;
     top: 0%;
-    height: 20rem;
+    width: 100%;
+    text-align: right;
+}
+.navbar-toggler {
+    padding: 0.7rem;
+}
+.navbar-dark .navbar-toggler{
+
+}
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+.enlaces {
+    display: flex;
+    justify-content: flex-end;
+    color:white;
+    font-weight: bold;
+    padding: 1rem;
+}
+.enlaces:hover{
+    color: crimson;
 }
 
 .contenedor{
@@ -37,28 +58,17 @@ a {text-decoration: none;}
 }
 /* Logo/titulo */
 .titulo {    
-    padding: 2.5rem 3rem;
     font-weight: bold;
-    color: crimson;
+    color: #dc143c;
     font-size: 1.5rem;
+  }
+  .titulo:hover {
+    color: white;
+    
+
   }    
 
-/* Menu */
-.header nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 2px;
-}
-.header a {
-    padding: 0.4rem;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-}
-.header a:hover {
-    color: crimson;
-}
+
 
 /* HERO */
 .hero {
@@ -165,7 +175,7 @@ button:hover{
 
 /*--------------------- HORARIOS.html -------------------*/
 .horarios h2 {
-    margin-top: 1rem;
+    margin-top: 4rem;
 }
 .main img {
     width: 400px;
@@ -211,7 +221,7 @@ button:hover{
     display: flex;
     justify-content: center;
     color: crimson;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 /* Planes - membresia */
 .planes{
@@ -285,12 +295,15 @@ button:hover{
 
 }
 /* -------------------------CONTACTO.html-------------------- */
+.fotos h2 {
+    margin-top: 4rem;
+}
 .formulario {
     width: 25rem;
     background: rgb(53, 53, 53);
     padding: 1.8rem;
     margin: auto;
-    margin-top: 3rem;
+    margin-top: 6rem;
     border-radius: 30px;    
     color: white;
     box-shadow: 7px 13px 37px #000;
@@ -339,7 +352,7 @@ button:hover{
     border-radius: 20px;
 }
 /* -----------------MEDIA QUERIE -------------------------*/
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
 
     h1{ font-size: 2.5rem;}
     h2{ font-size: 2rem;}
@@ -350,22 +363,8 @@ button:hover{
 
     /*-------------------- INDEX----------------------- */    
     /* HEADER */
-    .header{
-    position: fixed;
-    width: 100%;
-    height: 5rem;
-     }
-    .header .contenedor{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-     }
-     .contenedor nav {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 1rem;      
-     }
+ 
+     
      /* HERO */
      .hero h1 {
         font-size: 2.5rem;
@@ -556,7 +555,7 @@ button:hover{
         color: crimson;
         margin-top: 6rem;
         text-align: center;
-        font-family: 'Roboto';
+        
     }
     .galeria{
         text-align: center;
