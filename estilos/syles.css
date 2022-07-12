@@ -326,23 +326,22 @@ button:hover{
 }
 
 /* -----------------Galeria.html------------------- */
+.fotos {
+    text-align: center;
+}
 .galeria img {
-    width: 100%;
-    height: auto;
-    margin: 1rem 0rem;
+    width: 450px;
+    height: 250px;
+    margin: 1rem;
     border-radius: 5%;
     transition: .3s ease-out;
     
     }
 
-.musica{
-    display: none;
-
-}
-/* -------------------------CONTACTO.html-------------------- */
 .fotos h2 {
     margin-top: 4rem;
 }
+/* -------------------------CONTACTO.html-------------------- */
 .formulario {
     width: 25rem;
     background: rgb(53, 53, 53);
