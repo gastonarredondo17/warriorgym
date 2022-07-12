@@ -31,9 +31,7 @@ a {text-decoration: none;}
 .navbar-toggler {
     padding: 0.7rem;
 }
-.navbar-dark .navbar-toggler{
 
-}
 .collapse {
     display: flex;
     justify-content: flex-end;
@@ -64,11 +62,7 @@ a {text-decoration: none;}
   }
   .titulo:hover {
     color: white;
-    
-
   }    
-
-
 
 /* HERO */
 .hero {
@@ -121,6 +115,7 @@ button:hover{
     border-radius: 20px;
     
 }
+
 .descripcion p {
     color: black;
     padding: 1rem;
@@ -131,14 +126,64 @@ button:hover{
     padding: 0.5rem;
 }
 /* Disciplinas */
+.disciplinas .imgFuncional{
+    background-image: url("../multimedia/disciplinas-funcional.jpg");
+    background-size:cover;
+    border-radius: 30px;
+    background-position:left;
+    height: 200px;
+    width: 200px; 
+ }
+ .disciplinas .imgCrossfit{
+    background-image: url("../multimedia/disciplinas-crossfit.jpg");
+    background-size: cover;
+    border-radius: 30px;
+    background-position:left;
+    height: 200px;
+    width: 200px; 
+ }
+ .disciplinas .imgStretching{
+    background-image: url("../multimedia/disciplinas-stretching.jpg");
+    background-size: cover;
+    border-radius: 30px;
+    background-position:left;
+    height: 200px;
+    width: 200px; 
+ }
+ .disciplinas .imgCardio{
+    background-image: url("../multimedia/disciplinas-cardio.png");
+    background-size: cover;
+    border-radius: 30px;
+    background-position:left;
+    height: 200px;
+    width: 200px; 
+ }
+ .disciplinas .imgBox{
+    background-image: url("../multimedia/disciplinas-box.jpg");
+    background-size: cover;
+    border-radius: 30px;
+    background-position:left;
+    height: 200px;
+    width: 200px; 
+ }
+ .disciplinas .imgMusculacion{
+    background-image: url("../multimedia/disciplinas-musculacion.jpg");
+    background-size: cover;
+    border-radius: 30px;
+    background-position:left;
+    height: 200px;
+    width: 200px; 
+ }
 .tituloDisciplinas {
     color: crimson;
     margin-top: 2rem;   
 }
+
 .disciplinas {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
     width: 80%;
     height: 50%;
     border: 2px solid crimson;
@@ -262,7 +307,7 @@ button:hover{
 .btnMembresia{   
     font-size: 1rem;
     font-weight: bold;
-    margin: 3rem;
+    margin: 1rem;
     padding: 1rem 3rem;
     border-radius: 1rem;
     border: 3px solid rgba(0,0,0,0.3);
