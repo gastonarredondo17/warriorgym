@@ -1,0 +1,41 @@
+.galeria{
+    .fotos{
+        text-align: center;
+        width: auto;
+        h2{
+            margin-top: 4rem;
+        }
+    }
+    img{
+        width: 400px;
+        height: 200px;
+        margin: 0.5rem;
+        border-radius: 5%;
+        
+    }
+
+}
+@media (min-width: 768px) {
+    .galeria {
+        text-align: center;
+        h2{
+            color: crimson;
+            margin-top: 6rem;
+            text-align: center;
+        }
+        img{
+            width: 25rem;
+            height: 15rem;
+            margin-top:6rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            border-radius: 5%;
+            transition: .4s ease-out;
+            &:hover{
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

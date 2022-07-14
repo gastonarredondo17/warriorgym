@@ -1,0 +1,80 @@
+.formulario {
+  width: 25rem;
+  background: #353535;
+  padding: 1.8rem;
+  margin: auto;
+  margin-top: 6rem;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 7px 13px 37px #000; }
+  .formulario h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 3rem; }
+  .formulario input {
+    width: 100%;
+    background: #272829;
+    padding: 0.8rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #020305;
+    font-size: 1.1rem;
+    color: white; }
+  .formulario .boton {
+    width: 100%;
+    background: #272829;
+    border: none;
+    padding: 0.8rem;
+    color: white;
+    margin: 1rem 0;
+    font-size: 1rem; }
+    .formulario .boton:hover {
+      background-color: grey; }
+  .formulario .escribir {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  border-radius: 20px; }
+  .mapa iframe {
+    border-radius: 20px; }
+
+@media (min-width: 768px) {
+  .formulario {
+    margin-top: 8rem; } }
+
+.galeria .fotos {
+  text-align: center;
+  width: auto; }
+  .galeria .fotos h2 {
+    margin-top: 4rem; }
+
+.galeria img {
+  width: 400px;
+  height: 200px;
+  margin: 0.5rem;
+  border-radius: 5%; }
+
+@media (min-width: 768px) {
+  .galeria {
+    text-align: center; }
+    .galeria h2 {
+      color: crimson;
+      margin-top: 6rem;
+      text-align: center; }
+    .galeria img {
+      width: 25rem;
+      height: 15rem;
+      margin-top: 6rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+      border-radius: 5%;
+      transition: .4s ease-out; }
+      .galeria img:hover {
+        transform: scale(1.05);
+        cursor: pointer; } }
