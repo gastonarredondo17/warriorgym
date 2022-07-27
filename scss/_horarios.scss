@@ -1,0 +1,95 @@
+ /* -------------------HORARIOS.html------------- */
+ .horarios h2 {
+    margin-top: 4rem;
+}
+.main img {
+    width: 400px;
+    height: 300px;
+}
+.descripcionHorario {
+    background-color: white;
+    height: 12rem;
+    border-radius: 20px;
+    padding: 1rem;
+    color: crimson;
+    text-align: center;
+}
+.staffTitulo{
+    display: flex;
+    justify-content: center;
+}
+.instructores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    border: 2px solid crimson;
+    border-radius: 30px;
+    height: 100%;
+    margin: 2.5rem;
+    padding: 2rem;
+    box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.5);
+    img {
+        width: 150px;
+        height: 200px;
+        padding-right: 10px;
+        border-radius: 30px;
+    }
+ 
+}
+@media (min-width: 768px){
+    .horarios h2 {
+        margin-top: 6rem;
+    }
+    /* MAIN-Horarios */
+    .main img {
+        width: 600px;
+        height: 500px;
+    }
+    .section h2{
+        display: flex;
+        justify-content: center;
+    }
+    /* DESCRIPCION-Horarios */
+    .descripcionHorario { 
+        display: flex;
+        height: 10rem;           
+        border-radius: 20px;
+        padding: 1rem;
+        color: crimson;
+        text-align: center;
+        line-height: 4rem;
+    }
+    /* Staff-Horarios */
+    .staff .contenedor {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .staffTitulo{
+        display: flex; 
+        justify-content: center;
+    }
+    /* Instructores-horario */
+    .instructores {
+        display: flex;
+        flex-direction: column;
+        width: 30%;        
+        border: 2px solid crimson;
+        border-radius: 30px;
+        height: 100%;
+        margin: 2.5rem;
+        padding: 2rem;
+        box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.5);
+        img {
+            width: 150px;
+            height: 200px;
+            border-radius: 30px;
+            padding-right: 10px;
+        }
+     
+    }
+}

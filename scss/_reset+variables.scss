@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(176deg, rgba(0,0,0,1) 40%, rgba(56,56,56,1) 100%);
+    font-family: 'Roboto';
+    
+}
+h1{ font-size: 2.5rem;}
+h2{ font-size: 2rem;}
+h3{ font-size: 1.5rem;}
+h4{ font-size: 1.2rem;}
+p { font-size: 1.1rem;color:white}
+a {text-decoration: none;}
+
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

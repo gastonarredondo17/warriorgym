@@ -27,6 +27,7 @@ a {text-decoration: none;}
     top: 0%;
     width: 100%;
     text-align: right;
+    box-shadow: 0px -1px 50px 0px #1D1D1D;
 }
 .navbar-toggler {
     padding: 0.7rem;
@@ -82,9 +83,9 @@ a {text-decoration: none;}
     background-size: cover;
     background-position: center center;
 }
-.hero h1{
+/* .hero h1{
     color:white;
-}
+} */
 .spanTitulo {
     color:crimson;
     text-align: center;

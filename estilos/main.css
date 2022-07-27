@@ -1,3 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: black;
+  background: linear-gradient(176deg, black 40%, #383838 100%);
+  font-family: 'Roboto'; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 1.2rem; }
+
+p {
+  font-size: 1.1rem;
+  color: white; }
+
+a {
+  text-decoration: none; }
+
+.contenedor {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.navbar {
+  background-color: black;
+  position: fixed;
+  z-index: 40000;
+  top: 0%;
+  width: 100%;
+  text-align: right;
+  box-shadow: 0px -1px 50px 0px #1D1D1D; }
+  .navbar .navbar-toggler {
+    padding: 0.7rem; }
+
+.collapse {
+  display: flex;
+  justify-content: flex-end; }
+
+.enlaces {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-weight: bold;
+  padding: 1rem; }
+  .enlaces:hover {
+    color: crimson; }
+
+/* Logo/titulo */
+.titulo {
+  font-weight: bold;
+  color: #dc143c;
+  font-size: 1.5rem; }
+  .titulo:hover {
+    color: white; }
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../multimedia/backgroundpesas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .hero h1 {
+    color: white; }
+
+.spanTitulo {
+  color: crimson;
+  text-align: center; }
+
+.btnComenzar {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 3rem;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: crimson; }
+  .btnComenzar:hover {
+    background-color: #9c0120; }
+
+/* Descripcion */
+.descripcion {
+  text-align: center;
+  /* margin: 2.5rem; */
+  padding: 2rem;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  border-radius: 20px; }
+  .descripcion p {
+    color: black;
+    padding: 1rem;
+    margin-top: 0px; }
+  .descripcion h2 {
+    color: crimson;
+    padding: 0.5rem; }
+
+/* Disciplinas */
+.disciplinas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  width: 80%;
+  height: 50%;
+  border: 2px solid crimson;
+  border-radius: 30px;
+  margin: 2.5rem;
+  padding: 2rem;
+  box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.5); }
+  .disciplinas .imgFuncional {
+    background-image: url("../multimedia/disciplinas-funcional.jpg");
+    background-size: cover;
+    border-radius: 30px;
+    background-position: left;
+    height: 200px;
+    width: 200px; }
+  .disciplinas .imgCrossfit {
+    background-image: url("../multimedia/disciplinas-crossfit.jpg");
+    background-size: cover;
+    border-radius: 30px;
+    background-position: left;
+    height: 200px;
+    width: 200px; }
+  .disciplinas .imgStretching {
+    background-image: url("../multimedia/disciplinas-stretching.jpg");
+    background-size: cover;
+    border-radius: 30px;
+    background-position: left;
+    height: 200px;
+    width: 200px; }
+  .disciplinas .imgCardio {
+    background-image: url("../multimedia/disciplinas-cardio.png");
+    background-size: cover;
+    border-radius: 30px;
+    background-position: left;
+    height: 200px;
+    width: 200px; }
+  .disciplinas .imgBox {
+    background-image: url("../multimedia/disciplinas-box.jpg");
+    background-size: cover;
+    border-radius: 30px;
+    background-position: left;
+    height: 200px;
+    width: 200px; }
+  .disciplinas .imgMusculacion {
+    background-image: url("../multimedia/disciplinas-musculacion.jpg");
+    background-size: cover;
+    border-radius: 30px;
+    background-position: left;
+    height: 200px;
+    width: 200px; }
+
+.tituloDisciplinas {
+  color: crimson;
+  margin-top: 2rem; }
+
+.texto h3 {
+  text-align: center; }
+
+/* Footer */
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center; }
+
+/* Redes */
+.redes {
+  text-align: center; }
+
+.redesIcono {
+  height: 1.5rem;
+  width: 1.5rem; }
+
+.ubicacion {
+  text-align: center; }
+
+.copy {
+  font-size: 0.8rem;
+  color: grey; }
+
+@media (min-width: 768px) {
+  .descripcion {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 0rem; }
+  /* DISCIPLINAS */
+  .contenedor .disciplinas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .disciplinas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    border: none;
+    border-radius: none;
+    margin: 2.5rem;
+    padding: 2rem;
+    box-shadow: none; }
+    .disciplinas .texto {
+      width: 50%;
+      max-width: 50rem;
+      text-align: initial;
+      padding-left: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.5rem; }
+    .disciplinas .imgFuncional {
+      background-image: url("../multimedia/disciplinas-funcional.jpg");
+      background-size: cover;
+      border-radius: 30px;
+      background-position: left;
+      height: 200px;
+      width: 200px; }
+    .disciplinas .imgCrossfit {
+      background-image: url("../multimedia/disciplinas-crossfit.jpg");
+      background-size: cover;
+      border-radius: 30px;
+      background-position: left;
+      height: 200px;
+      width: 200px; }
+    .disciplinas .imgStretching {
+      background-image: url("../multimedia/disciplinas-stretching.jpg");
+      background-size: cover;
+      border-radius: 30px;
+      background-position: left;
+      height: 200px;
+      width: 200px; }
+    .disciplinas .imgCardio {
+      background-image: url("../multimedia/disciplinas-cardio.png");
+      background-size: cover;
+      border-radius: 30px;
+      background-position: left;
+      height: 200px;
+      width: 200px; }
+    .disciplinas .imgBox {
+      background-image: url("../multimedia/disciplinas-box.jpg");
+      background-size: cover;
+      border-radius: 30px;
+      background-position: left;
+      height: 200px;
+      width: 200px; }
+    .disciplinas .imgMusculacion {
+      background-image: url("../multimedia/disciplinas-musculacion.jpg");
+      background-size: cover;
+      border-radius: 30px;
+      background-position: left;
+      height: 200px;
+      width: 200px; } }
+
+/* -------------------HORARIOS.html------------- */
+.horarios h2 {
+  margin-top: 4rem; }
+
+.main img {
+  width: 400px;
+  height: 300px; }
+
+.descripcionHorario {
+  background-color: white;
+  height: 12rem;
+  border-radius: 20px;
+  padding: 1rem;
+  color: crimson;
+  text-align: center; }
+
+.staffTitulo {
+  display: flex;
+  justify-content: center; }
+
+.instructores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 50%;
+  border: 2px solid crimson;
+  border-radius: 30px;
+  height: 100%;
+  margin: 2.5rem;
+  padding: 2rem;
+  box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.5); }
+  .instructores img {
+    width: 150px;
+    height: 200px;
+    padding-right: 10px;
+    border-radius: 30px; }
+
+@media (min-width: 768px) {
+  .horarios h2 {
+    margin-top: 6rem; }
+  /* MAIN-Horarios */
+  .main img {
+    width: 600px;
+    height: 500px; }
+  .section h2 {
+    display: flex;
+    justify-content: center; }
+  /* DESCRIPCION-Horarios */
+  .descripcionHorario {
+    display: flex;
+    height: 10rem;
+    border-radius: 20px;
+    padding: 1rem;
+    color: crimson;
+    text-align: center;
+    line-height: 4rem; }
+  /* Staff-Horarios */
+  .staff .contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; }
+  .staffTitulo {
+    display: flex;
+    justify-content: center; }
+  /* Instructores-horario */
+  .instructores {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 2px solid crimson;
+    border-radius: 30px;
+    height: 100%;
+    margin: 2.5rem;
+    padding: 2rem;
+    box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.5); }
+    .instructores img {
+      width: 150px;
+      height: 200px;
+      border-radius: 30px;
+      padding-right: 10px; } }
+
+.membresiaTitulo {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  color: crimson;
+  margin-top: 4rem; }
+
+/* Planes - membresia */
+.planes {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  height: 30%;
+  width: 60%;
+  margin-top: 2rem; }
+  .planes h4 {
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+    font-size: 1.5rem; }
+  .planes h3 {
+    font-weight: 500; }
+
+.planLista ul {
+  padding-left: 0rem; }
+  .planLista ul li {
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2rem;
+    margin: 1rem; }
+
+.btnMembresia {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: crimson; }
+
+/* Pagos-membresia */
+.pagos {
+  display: flex;
+  justify-content: center;
+  background-color: crimson;
+  margin-top: 2rem; }
+
+/* MEDIAQUERY- MEMBRESIA */
+@media (min-width: 768px) {
+  .membresia h2 {
+    color: crimson;
+    margin-top: 6rem; }
+  .membresia .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 40%; }
+  /* Planes- membresia */
+  .planes {
+    margin: 1rem; }
+    .planes ul {
+      padding-left: 0px; }
+  .btnMembresia {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 3rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: crimson; }
+    .btnMembresia:hover {
+      background-color: #9c0120; } }
+
 .formulario {
   width: 25rem;
   background: #353535;

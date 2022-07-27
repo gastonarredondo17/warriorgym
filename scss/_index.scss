@@ -1,0 +1,277 @@
+
+.navbar {
+    background-color: black;
+    position: fixed;
+    z-index: 40000;
+    top: 0%;
+    width: 100%;
+    text-align: right;
+    box-shadow: 0px -1px 50px 0px #1D1D1D;
+    .navbar-toggler{
+        padding: 0.7rem;
+    }
+}
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+.enlaces {
+    display: flex;
+    justify-content: flex-end;
+    color:white;
+    font-weight: bold;
+    padding: 1rem;
+    &:hover {
+        color: crimson;
+    }
+}
+
+/* Logo/titulo */
+.titulo {    
+    font-weight: bold;
+    color: #dc143c;
+    font-size: 1.5rem;
+    &:hover {
+    color: white;
+  }
+}
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../multimedia/backgroundpesas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    h1{
+        color:white;
+    }
+}
+.spanTitulo {
+    color:crimson;
+    text-align: center;
+}
+.btnComenzar{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 3rem;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    border: 3px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: crimson;
+    &:hover{
+        background-color: rgb(156, 1, 32);
+    }
+}
+/* Descripcion */
+.descripcion{
+    text-align: center;
+    /* margin: 2.5rem; */
+    padding: 2rem;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    p {
+        color: black;
+        padding: 1rem;
+        margin-top: 0px;
+    }
+    h2 {
+        color: rgb(220, 20, 60);
+        padding: 0.5rem;
+    }
+}
+/* Disciplinas */
+.disciplinas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 80%;
+    height: 50%;
+    border: 2px solid crimson;
+    border-radius: 30px;
+    margin: 2.5rem;
+    padding: 2rem;
+    box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.5);
+    .imgFuncional{
+        background-image: url("../multimedia/disciplinas-funcional.jpg");
+        background-size:cover;
+        border-radius: 30px;
+        background-position:left;
+        height: 200px;
+        width: 200px; 
+     }
+     .imgCrossfit{
+        background-image: url("../multimedia/disciplinas-crossfit.jpg");
+        background-size: cover;
+        border-radius: 30px;
+        background-position:left;
+        height: 200px;
+        width: 200px; 
+     }
+     .imgStretching{
+        background-image: url("../multimedia/disciplinas-stretching.jpg");
+        background-size: cover;
+        border-radius: 30px;
+        background-position:left;
+        height: 200px;
+        width: 200px; 
+     }
+     .imgCardio{
+        background-image: url("../multimedia/disciplinas-cardio.png");
+        background-size: cover;
+        border-radius: 30px;
+        background-position:left;
+        height: 200px;
+        width: 200px; 
+     }
+     .imgBox{
+        background-image: url("../multimedia/disciplinas-box.jpg");
+        background-size: cover;
+        border-radius: 30px;
+        background-position:left;
+        height: 200px;
+        width: 200px; 
+     }
+     .imgMusculacion{
+        background-image: url("../multimedia/disciplinas-musculacion.jpg");
+        background-size: cover;
+        border-radius: 30px;
+        background-position:left;
+        height: 200px;
+        width: 200px; 
+     }
+}
+.tituloDisciplinas {
+    color: crimson;
+    margin-top: 2rem;   
+}
+.texto h3{
+    text-align: center;    
+}
+/* Footer */
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+/* Redes */
+.redes {text-align: center;}
+
+.redesIcono {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.ubicacion {
+    text-align: center;
+}
+.copy{
+    font-size: 0.8rem;
+    color: grey;
+}
+@media (min-width: 768px) {
+    .descripcion{
+        text-align: center;
+        padding: 2rem;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        margin: 0rem;
+        
+    }
+     /* DISCIPLINAS */
+     .contenedor .disciplinas{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;        
+     }
+     .disciplinas {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        border: none;
+        border-radius: none;
+        margin: 2.5rem;
+        padding: 2rem;
+        box-shadow: none;
+        .texto {
+        width: 50%;
+        max-width: 50rem;
+        text-align: initial;
+        padding-left: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.5rem;
+        }
+        .imgFuncional{
+            background-image: url("../multimedia/disciplinas-funcional.jpg");
+            background-size: cover;
+            border-radius: 30px;
+            background-position:left;
+            height: 200px;
+            width: 200px; 
+         }
+         .imgCrossfit{
+            background-image: url("../multimedia/disciplinas-crossfit.jpg");
+            background-size: cover;
+            border-radius: 30px;
+            background-position:left;
+            height: 200px;
+            width: 200px; 
+         }
+         .imgStretching{
+            background-image: url("../multimedia/disciplinas-stretching.jpg");
+            background-size: cover;
+            border-radius: 30px;
+            background-position:left;
+            height: 200px;
+            width: 200px; 
+         }
+         .imgCardio{
+            background-image: url("../multimedia/disciplinas-cardio.png");
+            background-size: cover;
+            border-radius: 30px;
+            background-position:left;
+            height: 200px;
+            width: 200px; 
+         }
+         .imgBox{
+            background-image: url("../multimedia/disciplinas-box.jpg");
+            background-size: cover;
+            border-radius: 30px;
+            background-position:left;
+            height: 200px;
+            width: 200px; 
+         }
+         .imgMusculacion{
+            background-image: url("../multimedia/disciplinas-musculacion.jpg");
+            background-size: cover;
+            border-radius: 30px;
+            background-position:left;
+            height: 200px;
+            width: 200px; 
+         }
+         
+
+    }
+}
