@@ -54,6 +54,8 @@
     background-position: center center;
     h1{
         color:white;
+        margin-top: 3rem;
+        font-size: 1.8rem;
     }
 }
 .spanTitulo {
@@ -77,8 +79,6 @@
 /* Descripcion */
 .descripcion{
     text-align: center;
-    /* margin: 2.5rem; */
-    padding: 2rem;
     background-color: white;
     width: 100%;
     height: auto;
@@ -99,12 +99,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-    width: 80%;
+    width: 90%;
     height: 50%;
     border: 2px solid crimson;
     border-radius: 30px;
     margin: 2.5rem;
-    padding: 2rem;
+    padding: 1rem;
     box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.5);
     .imgFuncional{
         background-image: url("../multimedia/disciplinas-funcional.jpg");
@@ -169,11 +169,18 @@
     justify-content: center;
 }
 /* Redes */
-.redes {text-align: center;}
+.redes {
+    text-align: center;
+    .redesSociales {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;   
+    }
+}
 
 .redesIcono {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 .ubicacion {
@@ -184,6 +191,9 @@
     color: grey;
 }
 @media (min-width: 768px) {
+    .titulo {
+        font-size: 2.5rem;
+    }
     .descripcion{
         text-align: center;
         padding: 2rem;

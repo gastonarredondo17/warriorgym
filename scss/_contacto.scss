@@ -1,5 +1,5 @@
 .formulario {
-    width: 25rem;
+    width: 50vh;
     background: rgb(53, 53, 53);
     padding: 1.8rem;
     margin: auto;
@@ -53,6 +53,7 @@
 }
 @media (min-width: 768px) {
     .formulario{
+        width: 80vh;
         margin-top: 8rem;
     }
 }

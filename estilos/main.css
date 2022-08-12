@@ -15,7 +15,7 @@ h2 {
   font-size: 2rem; }
 
 h3 {
-  font-size: 1.5rem; }
+  font-size: 1.4rem; }
 
 h4 {
   font-size: 1.2rem; }
@@ -79,7 +79,9 @@ a {
   background-size: cover;
   background-position: center center; }
   .hero h1 {
-    color: white; }
+    color: white;
+    margin-top: 3rem;
+    font-size: 1.8rem; }
 
 .spanTitulo {
   color: crimson;
@@ -101,8 +103,6 @@ a {
 /* Descripcion */
 .descripcion {
   text-align: center;
-  /* margin: 2.5rem; */
-  padding: 2rem;
   background-color: white;
   width: 100%;
   height: auto;
@@ -121,12 +121,12 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
-  width: 80%;
+  width: 90%;
   height: 50%;
   border: 2px solid crimson;
   border-radius: 30px;
   margin: 2.5rem;
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 2px 2px 20px rgba(255, 0, 0, 0.5); }
   .disciplinas .imgFuncional {
     background-image: url("../multimedia/disciplinas-funcional.jpg");
@@ -187,10 +187,14 @@ a {
 /* Redes */
 .redes {
   text-align: center; }
+  .redes .redesSociales {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem; }
 
 .redesIcono {
-  height: 1.5rem;
-  width: 1.5rem; }
+  height: 2rem;
+  width: 2rem; }
 
 .ubicacion {
   text-align: center; }
@@ -200,6 +204,8 @@ a {
   color: grey; }
 
 @media (min-width: 768px) {
+  .titulo {
+    font-size: 2.5rem; }
   .descripcion {
     text-align: center;
     padding: 2rem;
@@ -445,7 +451,7 @@ a {
       background-color: #9c0120; } }
 
 .formulario {
-  width: 25rem;
+  width: 50vh;
   background: #353535;
   padding: 1.8rem;
   margin: auto;
@@ -492,6 +498,7 @@ a {
 
 @media (min-width: 768px) {
   .formulario {
+    width: 80vh;
     margin-top: 8rem; } }
 
 .galeria .fotos {
