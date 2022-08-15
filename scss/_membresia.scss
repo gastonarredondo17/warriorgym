@@ -1,10 +1,7 @@
-.membresiaTitulo {
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    color: crimson;
-    margin-top: 4rem;
+.membresia h1 {
+    margin-top: 6rem;
 }
+
 /* Planes - membresia */
 .planes{
     display: flex;
@@ -13,8 +10,8 @@
     color: white;
     text-align: center;
     border-radius: 30px;
-    height: 30%;
-    width:60%;
+    height: 90vh;
+    width:50vh;
     margin-top: 2rem;
     h4 {
         display: flex;
@@ -42,7 +39,7 @@
     font-size: 1rem;
     font-weight: bold;
     margin: 1rem;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     border-radius: 1rem;
     border: 3px solid rgba(0,0,0,0.3);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
@@ -65,13 +62,15 @@
     .membresia .contenedor{
         display: flex;
         justify-content: center;
-        flex-direction: row;       
+        flex-direction: column;       
         width: 40%;
          
     }
     /* Planes- membresia */
     .planes{
         margin: 1rem;
+        height: 90vh;
+        width: 50vh;
         ul {
             padding-left: 0px;
         }
@@ -80,7 +79,58 @@
         font-size: 1.5rem;
         font-weight: bold;
         margin: 3rem;
+        margin-top: 0rem;
         padding: 1rem 1rem;
+        border-radius: 1rem;
+        border: 3px solid rgba(0,0,0,0.3);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        color: white;
+        background-color: crimson;
+        &:hover {
+            background-color: rgb(156, 1, 32);
+        }
+    }
+}
+@media (min-width: 1024px){
+    
+    .membresia h2{
+        color:crimson;
+        margin-top: 6rem;
+    }
+    .membresia .contenedor{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;       
+        width: 40%;
+         
+    }
+    /* Planes- membresia */
+    .planes{
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+        color: white;
+        text-align: center;
+        border-radius: 30px;
+        height: 50%;
+        width:70%;
+        margin-top: 2rem;
+        h4 {
+            display: flex;
+            justify-content: center;
+            background-color: crimson;
+            font-size: 1.5rem;    
+        }
+        h3 {
+            font-weight: 500;
+        }
+    }
+    .btnMembresia{   
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 3rem;
+        margin-top: 0rem;
+        padding: 1rem;
         border-radius: 1rem;
         border: 3px solid rgba(0,0,0,0.3);
         box-shadow: 2px 2px 10px rgba(0,0,0,0.5);

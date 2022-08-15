@@ -57,6 +57,8 @@
         margin-top: 3rem;
         font-size: 1.8rem;
     }
+    
+
 }
 .spanTitulo {
     color:crimson;
@@ -98,7 +100,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 90%;
     height: 50%;
     border: 2px solid crimson;
