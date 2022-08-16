@@ -313,8 +313,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50vh;
-  height: 75vh;
+  width: 15rem;
+  height: 30rem;
   border: 2px solid crimson;
   border-radius: 30px;
   margin: 2.5rem;
@@ -386,8 +386,8 @@ a {
   color: white;
   text-align: center;
   border-radius: 30px;
-  height: 45vh;
-  width: 30vh;
+  height: 30rem;
+  width: 18rem;
   margin-top: 2rem; }
   .planes h4 {
     display: flex;
@@ -438,9 +438,7 @@ a {
     width: 40%; }
   /* Planes- membresia */
   .planes {
-    margin: 1rem;
-    height: 45vh;
-    width: 30vh; }
+    margin: 1rem; }
     .planes ul {
       padding-left: 0px; }
   .btnMembresia {
